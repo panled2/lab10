@@ -11,7 +11,7 @@ if (booknum == 1) {
         name: "American Dirt",
     });
     bookQuery.exec((error, data) => {
-        if (data) res.render("book1", {bookSc1: data});
+        if (data) res.render("book1", {book: data});
     });
 }
 else if (booknum == 2) {
@@ -19,7 +19,7 @@ else if (booknum == 2) {
         name: "The Future's Not Ours To See",
     });
     bookQuery.exec((error, data) => {
-        if (data) res.render("book2", {bookSc1: data});
+        if (data) res.render("book2", {book: data});
     });
 }
 else if (booknum == 3) {
@@ -27,7 +27,7 @@ else if (booknum == 3) {
         name: "The Judge's List",
     });
     bookQuery.exec((error, data) => {
-        if (data) res.render("book3", {bookSc1: data});
+        if (data) res.render("book3", {book: data});
     });
 }
 else {
