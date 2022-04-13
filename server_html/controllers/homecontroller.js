@@ -4,7 +4,7 @@ exports.initialReq = (req,res) => {
     res.render("home");
 };
 
-exports.sendReqParam= (req,res) =>{
+exports.sendBookreq= (req,res) =>{
 let booknum = req.params.bookNumber;
 if (booknum == 1) {
     var bookQuery = Book.findOne({

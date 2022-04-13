@@ -34,7 +34,7 @@ app.get('/', (req,res)=>{
 });
 
 app.get("/home", homeController.initialReq);
-app.get("/book/:bookNumber", homeController.sendReqParam);
+app.get("/book/:bookNumber", homeController.sendBookreq);
 
 app.listen(app.get("port"), ()=>{
     console.log(`Server running at http://localhost:${app.get("port")}`);
