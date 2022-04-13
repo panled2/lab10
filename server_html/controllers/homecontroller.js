@@ -29,10 +29,4 @@ else if (booknum == 3) {
     bookQuery.exec((error, data) => {
         if (data) res.render("book3", {book: data});
     });
-}
-else {
-    let errorCode = httpStatus.NOT_FOUND;
-    res.status(errorCode);
-    res.send(`${errorCode} | The page does not exist!`);
-};
-};
+};};
